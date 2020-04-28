@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/spacing_normal"
+    android:layout_marginTop="@dimen/spacing_micro"
+    android:layout_marginEnd="@dimen/spacing_normal"
+    android:layout_marginBottom="@dimen/spacing_micro"
+    android:background="@color/white_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/cardview_corner_radius"
+    app:cardElevation="@dimen/cardview_elevation"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/spacing_normal"
+        android:paddingBottom="@dimen/spacing_normal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/placeImage"
+            android:layout_width="@dimen/user_image_size"
+            android:layout_height="@dimen/user_image_size"
+            android:layout_marginStart="@dimen/user_image_margin"
+            android:layout_marginEnd="@dimen/user_image_margin"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/placeNameText"
+            style="?android:textViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/spacing_nano"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:ellipsize="end"
+            android:gravity="start|center_vertical"
+            android:textAlignment="viewStart"
+            android:lines="2"
+            app:layout_constraintEnd_toStartOf="@+id/menu"
+            app:layout_constraintStart_toEndOf="@+id/placeImage"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@tools:sample/first_names" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/locationText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/spacing_micro"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:drawablePadding="@dimen/spacing_nano"
+            android:ellipsize="end"
+            android:gravity="start|center_vertical"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            app:layout_constraintEnd_toStartOf="@+id/menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/placeImage"
+            tools:text="@tools:sample/cities" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/menu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:tint="@color/ic_gray_tint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_more_horiz_black_24dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/captionText"
+            style="?android:textViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:gravity="start|center_vertical"
+            android:justificationMode="inter_word"
+            android:singleLine="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationText"
+            tools:targetApi="o"
+            tools:text="@tools:sample/lorem" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/moreText"
+            style="?android:textViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_double"
+            android:text="@string/more_detail"
+            android:textColor="@android:color/holo_red_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/captionText" />
+
+        <View
+            android:id="@+id/dividerView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/spacing_normal"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:background="@color/ic_light_gray_tint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/captionText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_nano">2dp</dimen>
+    <dimen name="spacing_micro">4dp</dimen>
+    <dimen name="spacing_normal">8dp</dimen>
+    <dimen name="spacing_normal_second">12dp</dimen>
+    <dimen name="spacing_double">16dp</dimen>
+    <dimen name="spacing_triple">24dp</dimen>
+    <dimen name="spacing_quadruple">32dp</dimen>
+
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="question_item_height">72dp</dimen>
+    <dimen name="cardview_elevation">8dp</dimen>
+    <dimen name="textView_rate_height_width">24dp</dimen>
+    <dimen name="user_image_margin">18dp</dimen>
+    <dimen name="user_image_size">48dp</dimen>
+    <dimen name="image_preview">52dp</dimen>
+    <dimen name="cardview_corner_radius">5dp</dimen>
+</resources>

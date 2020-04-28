@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white_bg">#ffffff</color>
+    <color name="ic_gray_tint">#726F6F</color>
+    <color name="ic_light_gray_tint">#DFD9D9</color>
+    <color name="toolbar_bg_color">#726F6F</color>
+    <color name="white_txt_color">#FFFFFF</color>
+
+
+    <color name="indigo">#4563EF</color>
+    <color name="teal">#37EABA</color>
+    <color name="light_blue">#25DAF1</color>
+    <color name="yellow">#F8D034</color>
+    <color name="orange">#F87311</color>
+
+    <integer-array name="swipe_refresh">
+        <item>@color/indigo</item>
+        <item>@color/teal</item>
+        <item>@color/light_blue</item>
+        <item>@color/yellow</item>
+        <item>@color/orange</item>
+    </integer-array>
+
+</resources>
